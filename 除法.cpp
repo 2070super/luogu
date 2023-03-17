@@ -10,8 +10,13 @@ int main()
 	cin >> n1;
 	vector<int> v;
 	long long num = 0;
-	if (n1 == 0||(s1.size()==1&&s1[0]==0))
+	if (n1 == 0)
 	{
+		return 0;
+	}
+	if(s1.size()==1&&s1[0]=='0')
+	{
+		cout<<0;
 		return 0;
 	}
 	for (int i = 0; i < s1.size(); i++)
