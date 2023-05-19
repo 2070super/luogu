@@ -11,9 +11,9 @@ int main()
 	{
 		if(v[i]==0)
 		{
-			for(int j=i*i;j<=num;j+=i)
+			for(int j=i;i*j<=num;j++)
 			{
-				v[j]=1;
+				v[i*j]=1;
 			}
 		}
 	}
